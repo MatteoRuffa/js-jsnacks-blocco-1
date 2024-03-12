@@ -31,7 +31,7 @@ console.log(frigo);
 // }
 
 // 3. ----------FATTO CON CICLO FOR----------
-let cocomeroPresente = false;
+let cocomeroPresente = false; //flag
 
 for (let i = 0; i < frigo.length; i++) {
     if (frigo[i] === 'cocomero') {
