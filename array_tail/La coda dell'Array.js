@@ -8,5 +8,26 @@ Chiediamo all'utente quanti elementi dell'array dovremo stampare
 Suggerimenti:
 Probabilmente conviene controllare che il numero di elementi della coda non sia più grande 
 del numero di elementi totali dell'array
-
 */
+
+
+// Chiediamo all'utente quanti elementi vuole nell'array
+const numElements = parseInt(prompt('quanti elementi vuoi creare?'));
+console.log(numElements);
+
+// Creiamo un array vuoto
+const boxElements = [];
+
+// Generiamo numeri casuali e li inseriamo nell'array
+for (let i = 0; i < numElements; i++) {
+    let elements = getRndInteger(1, 100);
+    console.log(elements);
+    boxElements.push(elements);
+}
+console.log(boxElements);
+
+// Stampiamo gli ultimi 5 elementi dell'array
+let ultimi5Elementi = boxElements.slice(-5);
+console.log("Gli ultimi 5 elementi dell'array sono:" + ultimi5Elementi)
+
+//NOTE: non ho avuto bisogno con .slice() di dover definire che il num elementi sia > di 5!! (chiedere profs)
