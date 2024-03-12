@@ -7,10 +7,6 @@ Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti 
 // Creiamo due array di numeri tra 1 e 100 che hanno un numero di elementi 
 // diversi scelti dall'utente
 
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
-
 
 const elUserArray1 = parseInt(prompt('Quanti numeri casuali da 1 a 100 vuoi prendere nel box 1?'));
 console.log('numeri di elementi box1: ' + elUserArray1);
