@@ -27,15 +27,19 @@ for (let i = 0; i < numElements; i++) {
 console.log(boxElements);
 
 // Stampiamo gli ultimi 5 elementi dell'array
-// let ultimi5Elementi = boxElements.slice(-5);
-// console.log("Gli ultimi 5 elementi dell'array sono:" + ultimi5Elementi)
+/*  
+    let ultimi5Elementi = boxElements.slice(-5);
+    console.log("Gli ultimi 5 elementi dell'array sono:" + ultimi5Elementi)
+*/
 
 //NOTE: non ho avuto bisogno con .slice() di dover definire che il num elementi sia > di 5!! (chiedere profs)
 
 // Chiediamo all'utente quanti elementi dell'array dovremo stampare
 const numElementsStampa = parseInt(prompt('quanti elementi vuoi stampare in console?'));
-// Probabilmente conviene controllare che il numero di elementi della coda non sia 
-// più grande del numero di elementi totali dell'array
+/*
+Probabilmente conviene controllare che il numero di elementi della coda non sia 
+più grande del numero di elementi totali dell'array 
+*/
 
 if (numElementsStampa > numElements) {
     console.log('ERRORE!!stai provando a selezionare più elementi di quelli che hai!');
