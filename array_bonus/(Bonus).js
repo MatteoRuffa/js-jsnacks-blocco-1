@@ -30,14 +30,14 @@ console.log(array2);
 
 
 // Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
-// troviamo la differemza di numeri di elementi
-// if(array1 > array2) {
-//     let differenzaArray = parseInt(array1.length - array2.length);
-//     console.log(differenzaArray);
-// } else {
-//     let differenzaArray = parseInt(array2.length - array1.length);
-//     console.log(differenzaArray);
-// }
+//  troviamo la differemza di numeri di elementi
+ if(array1 > array2) {
+     let differenzaArray = parseInt(array1.length - array2.length);
+     console.log(differenzaArray);
+ } else {
+     let differenzaArray = parseInt(array2.length - array1.length);
+     console.log(differenzaArray);
+ }
 
 // // usiamo la differenza per creare in ciclo un num Element. 
 // for (let i = 0; i < differenzaArray; i++) {
