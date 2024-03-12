@@ -13,7 +13,7 @@ function getRndInteger(min, max) {
 
 
 const elUserArray1 = parseInt(prompt('Quanti numeri casuali da 1 a 100 vuoi prendere nel box 1?'));
-console.log(elUserArray1);
+console.log('numeri di elementi box1: ' + elUserArray1);
 
 let array1 = [];
 
@@ -24,7 +24,7 @@ for(let i = 0; i < elUserArray1; i++){
 console.log(array1);
 
 const elUserArray2 = parseInt(prompt('Quanti numeri casuali da 1 a 100 vuoi prendere nel box 2?'));
-console.log(elUserArray2);
+console.log('numeri di elementi box2: ' + elUserArray2);
 
 let array2 = [];
 
@@ -40,7 +40,7 @@ console.log(array2);
 // usiamo la differenza per creare in ciclo per pareggiare il numero di Elementi 
 if(array1.length > array2.length) {
     let differenceArray  = parseInt(array1.length - array2.length);
-    console.log(differenceArray );
+    console.log('differenza di elementi tra le due box: ' + differenceArray );
     for (let i = 0; i < differenceArray ; i++) {
         let elements = getRndInteger(1, 100);
         array2.push(elements)
@@ -49,7 +49,7 @@ if(array1.length > array2.length) {
     
 } else {
     let differenceArray  = parseInt(array2.length - array1.length);
-    console.log(differenceArray );
+    console.log('differenza di elementi tra le due box: ' + differenceArray );
     for (let i = 0; i < differenceArray ; i++) {
         let elements = getRndInteger(1, 100);
         array1.push(elements);
